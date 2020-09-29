@@ -139,7 +139,7 @@ try{
     let initialEvents = await conversation.getEvents({ event_type: "text", page_size: 10, order:"desc" });
     listMessages(initialEvents);
    // Update the UI to show which user we are
-  document.getElementById('sessionName').innerHTML = conversation.name; //conversation.me.user.name + "'s messages"
+  document.getElementById('sessionName').innerHTML = conversation.me.user.name + "'s messages";
    
    
    // Any time there's a new text event, add it as a message
